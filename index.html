@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Jianxu Chen - Research in Machine Learning, Soft Sensing, Water Quality Monitoring, and Environmental AI">
+    <meta name="keywords"
+        content="Jianxu Chen, MBZUAI, KAUST, Machine Learning, Soft Sensor, Wastewater, Deep Learning">
+    <title>Jianxu Chen - Academic Homepage</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Animated Background Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav" id="topNav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">Homepage</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link active" data-section="about">About</a>
+                <a href="#research" class="nav-link" data-section="research">Research</a>
+                <a href="#publications" class="nav-link" data-section="publications">Publications</a>
+                <a href="#honors" class="nav-link" data-section="honors">Honors</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu">
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#research" class="mobile-nav-link">Research</a>
+            <a href="#publications" class="mobile-nav-link">Publications</a>
+            <a href="#honors" class="mobile-nav-link">Honors</a>
+        </div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="page-wrapper">
+        <!-- Left Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-sticky">
+                <!-- Profile Photo -->
+                <div class="profile-photo-wrapper animate-on-scroll">
+                    <div class="profile-photo-ring"></div>
+                    <img src="1.jpg" alt="Jianxu Chen" class="profile-photo" id="profilePhoto">
+                    <div class="profile-status">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Open to Collaborate</span>
+                    </div>
+                </div>
+
+                <!-- Name & Title -->
+                <div class="profile-info animate-on-scroll">
+                    <h1 class="profile-name">Jianxu Chen</h1>
+                    <p class="profile-name-cn">（陈建旭）</p>
+                    <p class="profile-title">Msc. Student @ MBZUAI</p>
+                    <p class="profile-affiliation">
+                        <i class="fas fa-university"></i>
+                        MBZUAI
+                    </p>
+                    <p class="profile-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Abu Dhabi, UAE
+                    </p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="social-links animate-on-scroll">
+                    <a href="mailto:Jianxu.Chen@mbzuai.ac.ae" class="social-link" data-tooltip="Work Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="mailto:chenjianxu75@gmail.com" class="social-link" data-tooltip="Personal Email">
+                        <i class="fas fa-at"></i>
+                    </a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=ZQ-1xKMAAAAJ" target="_blank"
+                        class="social-link" data-tooltip="Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://github.com/chenjianxu75" target="_blank" class="social-link" data-tooltip="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="sidebar-actions animate-on-scroll">
+                    <a href="mailto:Jianxu.Chen@mbzuai.ac.ae" class="btn btn-primary btn-contact">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Contact Me</span>
+                        <div class="btn-shine"></div>
+                    </a>
+                </div>
+
+
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- About / Bio Section -->
+            <section class="section" id="about">
+                <div class="section-content animate-on-scroll">
+                    <p class="bio-text">
+                        Hi! My name is <strong>Jianxu Chen</strong> (陈建旭). I am currently a Msc. Student at
+                        <a href="https://mbzuai.ac.ae" target="_blank" class="inline-link">Mohamed bin Zayed University
+                            of Artificial Intelligence (MBZUAI)</a>,
+                        advised by <a href="https://mbzuai.ac.ae/study/faculty/imran-razzak/" target="_blank"
+                            class="inline-link">Prof. Imran Razzak</a>.
+                        Previously, I was a VSRP Remote Visiting Research Student at
+                        <a href="https://www.kaust.edu.sa" target="_blank" class="inline-link">King Abdullah University
+                            of Science and Technology (KAUST)</a>.
+                        I hold dual bachelor's degrees in <strong>Information Security</strong> from
+                        <a href="https://www.ncepu.edu.cn/" target="_blank" class="inline-link">North China Electric
+                            Power University (NCEPU)</a> and
+                        <strong>Mechatronics and Robotics Engineering</strong> from
+                        <a href="https://www.nsu.ru/n/" target="_blank" class="inline-link">Novosibirsk State University
+                            (NSU)</a>, Russia.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Research Interests -->
+            <section class="section" id="research">
+                <h2 class="section-title animate-on-scroll">
+                    <span class="title-emoji">📖</span>
+                    <span>Research Interests</span>
+                </h2>
+                <div class="research-text animate-on-scroll">
+                    <p>My research focuses on the design and application of deep learning and machine learning
+                        algorithms. Current areas of interest include:</p>
+                    <ul class="research-list">
+                        <li><strong>Soft Sensing &amp; Environmental AI</strong> — Developing data-driven soft sensors
+                            for
+                            real-time water quality monitoring and prediction</li>
+                        <li><strong>Machine Learning</strong> — Lifelong learning, zero-shot generalization,
+                            self-calibration and self-training strategies</li>
+                        <li><strong>Deep Learning &amp; Computer Vision</strong> — Image recognition, object detection,
+                            deep learning model design and optimization</li>
+                    </ul>
+                    <p class="research-note">If you are interested in collaborating with me or want to have a chat,
+                        feel free to reach me at Jianxu.Chen@mbzuai.ac.ae or chenjianxu75@gmail.com.</p>
+                </div>
+            </section>
+
+            <!-- News -->
+            <section class="section" id="news">
+                <h2 class="section-title animate-on-scroll">
+                    <span class="title-emoji">🔥</span>
+                    <span>News</span>
+                </h2>
+                <div class="news-timeline animate-on-scroll">
+                    <div class="news-item">
+                        <div class="news-date">2026.03</div>
+                        <div class="news-content">
+                            <span class="news-badge">🎉 New</span>
+                            Paper accepted in <strong>npj Emerging Contaminants</strong> (Nature)!
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">2026.01</div>
+                        <div class="news-content">
+                            Paper accepted in <strong>Scientific Reports</strong> (Nature)!
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">2025.04</div>
+                        <div class="news-content">
+                            Started M.Sc. studies at MBZUAI</a>, advised by <a
+                                href="https://mbzuai.ac.ae/study/faculty/imran-razzak/" target="_blank"
+                                class="inline-link">Prof. Imran Razzak</a>.
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">2025.01</div>
+                        <div class="news-content">
+                            Paper accepted in <strong>npj Clean Water</strong> (Nature)!
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">2024.07</div>
+                        <div class="news-content">
+                            Started <strong>VSRP visiting research</strong> at KAUST with <a
+                                href="https://sites.google.com/kaust.edu.sa/ibrahimandoye/home?authuser=0"
+                                target="_blank" class="inline-link">Prof. Ibrahima N'Doye</a>.
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">2024.06</div>
+                        <div class="news-content">
+                            Graduated from <strong>NSU</strong> and <strong>NCEPU</strong>!
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-show-more" id="showMoreNews">
+                    <span>Show More</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </section>
+
+            <!-- Publications -->
+            <section class="section" id="publications">
+                <h2 class="section-title animate-on-scroll">
+                    <span class="title-emoji">📝</span>
+                    <span>Publications</span>
+                </h2>
+                <p class="section-subtitle animate-on-scroll">
+                    Full list on <a href="https://scholar.google.com/citations?hl=en&user=ZQ-1xKMAAAAJ" target="_blank"
+                        class="inline-link">Google Scholar</a>.
+                </p>
+
+                <!-- Publication 1 (newest): npj Emerging Contaminants, 2026 -->
+                <div class="publication-card animate-on-scroll">
+                    <div class="pub-gallery">
+                        <a href="https://www.nature.com/articles/s44454-026-00030-8" target="_blank">
+                            <img src="paper3.png" alt="Model Generalization Paradigms - Fig 1">
+                        </a>
+                        <a href="https://www.nature.com/articles/s44454-026-00030-8" target="_blank">
+                            <img src="paper3_1.png" alt="Model Generalization Paradigms - Fig 2">
+                        </a>
+                        <a href="https://www.nature.com/articles/s44454-026-00030-8" target="_blank">
+                            <img src="paper3_2.png" alt="Model Generalization Paradigms - Fig 3">
+                        </a>
+                        <span class="pub-gallery-badge"><i class="fas fa-external-link-alt"></i> View Paper</span>
+                    </div>
+                    <div class="pub-info">
+                        <h4 class="pub-title">
+                            <a href="https://www.nature.com/articles/s44454-026-00030-8" target="_blank">
+                                Model generalization paradigms for predicting viral particles and evaluating removal
+                                efficiencies in anaerobic membrane bioreactor plants
+                            </a>
+                        </h4>
+                        <p class="pub-authors">
+                            <strong>Jianxu Chen</strong>, Ibrahima N'Doye, Jesus Sanchez Medina, Syed Hasan Shah,
+                            Pei-Ying Hong.
+                        </p>
+                        <p class="pub-venue">
+                            <strong>npj Emerging Contaminants</strong> (Nature), 2026
+                        </p>
+                        <div class="pub-tags">
+                            <span class="pub-tag tag-oral">New</span>
+                            <span class="pub-tag tag-ccf">Q1</span>
+                            <span class="pub-tag tag-if">IF = 6.9</span>
+                            <div class="pub-links">
+                                <a href="https://www.nature.com/articles/s44454-026-00030-8" target="_blank"
+                                    class="pub-link-btn">
+                                    <i class="fas fa-file-pdf"></i> Paper
+                                </a>
+                                <button class="pub-link-btn btn-cite" onclick="showCitation(this)">
+                                    <i class="fas fa-quote-right"></i> Cite
+                                </button>
+                            </div>
+                        </div>
+                        <div class="citation-box" style="display:none;">
+                            <pre><code>@article{chen2026generalization,
+  title={Model generalization paradigms for predicting viral particles and evaluating removal efficiencies in anaerobic membrane bioreactor plants},
+  author={Chen, Jianxu and N'Doye, Ibrahima and Sanchez Medina, Jesus and Shah, Syed Hasan and Hong, Pei-Ying},
+  journal={npj Emerging Contaminants},
+  year={2026}
+}</code></pre>
+                            <button class="btn-copy" onclick="copyCitation(this)">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 2: Scientific Reports, 2025 -->
+                <div class="publication-card animate-on-scroll">
+                    <div class="pub-gallery">
+                        <a href="https://www.nature.com/articles/s41598-025-26384-4" target="_blank">
+                            <img src="paper2.png" alt="Zero-shot Generalization">
+                        </a>
+                        <span class="pub-gallery-badge"><i class="fas fa-external-link-alt"></i> View Paper</span>
+                    </div>
+                    <div class="pub-info">
+                        <h4 class="pub-title">
+                            <a href="https://www.nature.com/articles/s41598-025-26384-4" target="_blank">
+                                Zero-shot generalization for predicting viral concentrations and evaluating removal
+                                efficiencies across wastewater matrices
+                            </a>
+                        </h4>
+                        <p class="pub-authors">
+                            <strong>Jianxu Chen</strong>, Ibrahima N'Doye, Mohanned K. Monjed, Pei-Ying Hong.
+                        </p>
+                        <p class="pub-venue">
+                            <strong>Scientific Reports</strong> (Nature), 2025
+                        </p>
+                        <div class="pub-tags">
+                            <span class="pub-tag tag-ccf">Q1</span>
+                            <span class="pub-tag tag-if">IF = 3.8</span>
+                            <div class="pub-links">
+                                <a href="https://www.nature.com/articles/s41598-025-26384-4" target="_blank"
+                                    class="pub-link-btn">
+                                    <i class="fas fa-file-pdf"></i> Paper
+                                </a>
+                                <button class="pub-link-btn btn-cite" onclick="showCitation(this)">
+                                    <i class="fas fa-quote-right"></i> Cite
+                                </button>
+                            </div>
+                        </div>
+                        <div class="citation-box" style="display:none;">
+                            <pre><code>@article{chen2025zeroshot,
+  title={Zero-shot generalization for predicting viral concentrations and evaluating removal efficiencies across wastewater matrices},
+  author={Chen, Jianxu and N'Doye, Ibrahima and Monjed, Mohanned K. and Hong, Pei-Ying},
+  journal={Scientific Reports},
+  year={2025}
+}</code></pre>
+                            <button class="btn-copy" onclick="copyCitation(this)">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publication 3 (oldest): npj Clean Water, 2025 — dual images -->
+                <div class="publication-card animate-on-scroll">
+                    <div class="pub-gallery">
+                        <a href="https://www.nature.com/articles/s41545-025-00461-7" target="_blank">
+                            <img src="paper1.png" alt="Viral Particle Prediction - Fig 1">
+                        </a>
+                        <a href="https://www.nature.com/articles/s41545-025-00461-7" target="_blank">
+                            <img src="paper1_2.png" alt="Viral Particle Prediction - Fig 2">
+                        </a>
+                        <span class="pub-gallery-badge"><i class="fas fa-external-link-alt"></i> View Paper</span>
+                    </div>
+                    <div class="pub-info">
+                        <h4 class="pub-title">
+                            <a href="https://www.nature.com/articles/s41545-025-00461-7" target="_blank">
+                                Viral particle prediction in wastewater treatment plants using nonlinear lifelong
+                                learning models
+                            </a>
+                        </h4>
+                        <p class="pub-authors">
+                            <strong>Jianxu Chen</strong>, Ibrahima N'Doye, Yurii Myshkevych, Fatimah Aljehani, Mohanned
+                            K. Monjed, Taous-Meriem Laleg-Kirati, Pei-Ying Hong.
+                        </p>
+                        <p class="pub-venue">
+                            <strong>npj Clean Water</strong> (Nature), 2025
+                        </p>
+                        <div class="pub-tags">
+                            <span class="pub-tag tag-ccf">Q1</span>
+                            <span class="pub-tag tag-if">IF = 10.4</span>
+                            <div class="pub-links">
+                                <a href="https://www.nature.com/articles/s41545-025-00461-7" target="_blank"
+                                    class="pub-link-btn">
+                                    <i class="fas fa-file-pdf"></i> Paper
+                                </a>
+                                <button class="pub-link-btn btn-cite" onclick="showCitation(this)">
+                                    <i class="fas fa-quote-right"></i> Cite
+                                </button>
+                            </div>
+                        </div>
+                        <div class="citation-box" style="display:none;">
+                            <pre><code>@article{chen2025viral,
+  title={Viral particle prediction in wastewater treatment plants using nonlinear lifelong learning models},
+  author={Chen, Jianxu and N'Doye, Ibrahima and Myshkevych, Yurii and Aljehani, Fatimah and Monjed, Mohanned K. and Laleg-Kirati, Taous-Meriem and Hong, Pei-Ying},
+  journal={npj Clean Water},
+  year={2025}
+}</code></pre>
+                            <button class="btn-copy" onclick="copyCitation(this)">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Honors & Awards -->
+            <section class="section" id="honors">
+                <h2 class="section-title animate-on-scroll">
+                    <span class="title-emoji">🏆</span>
+                    <span>Honors & Awards</span>
+                </h2>
+                <div class="honors-list animate-on-scroll">
+                    <div class="honor-item">
+                        <div class="honor-year">2022-2024</div>
+                        <div class="honor-content">
+                            <div class="honor-icon">🥇</div>
+                            <div>
+                                <strong>China National Scholarship</strong>
+                                <p>China Scholarship Council (CSC), 2022–2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="honor-item">
+                        <div class="honor-year">2021</div>
+                        <div class="honor-content">
+                            <div class="honor-icon">🏅</div>
+                            <div>
+                                <strong>Departmental Outstanding Student Scholarship</strong>
+                                <p>North China Electric Power University</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="honor-item">
+                        <div class="honor-year">2020</div>
+                        <div class="honor-content">
+                            <div class="honor-icon">🏅</div>
+                            <div>
+                                <strong>Departmental Outstanding Student Scholarship</strong>
+                                <p>North China Electric Power University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Footer -->
+            <footer class="site-footer animate-on-scroll">
+                <div class="footer-content">
+                    <div class="footer-wave">
+                        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path
+                                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <!-- Visitor Counter -->
+                    <div class="visitor-counter">
+                        <div class="visitor-item">
+                            <i class="fas fa-eye"></i>
+                            <span>Total Visits: </span>
+                            <span id="busuanzi_value_site_pv" class="visitor-number">--</span>
+                        </div>
+                        <div class="visitor-divider"></div>
+                        <div class="visitor-item">
+                            <i class="fas fa-users"></i>
+                            <span>Unique Visitors: </span>
+                            <span id="busuanzi_value_site_uv" class="visitor-number">--</span>
+                        </div>
+                    </div>
+                    <p>© 2026 Jianxu Chen. Built with ❤️</p>
+                    <p class="footer-sub">Last updated: April 2026</p>
+                    <div class="footer-links">
+                        <a href="https://github.com/chenjianxu75" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://scholar.google.com/citations?hl=en&user=ZQ-1xKMAAAAJ" target="_blank"><i
+                                class="fas fa-graduation-cap"></i></a>
+                        <a href="mailto:Jianxu.Chen@mbzuai.ac.ae"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span>Copied to clipboard!</span>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Busuanzi Visitor Counter -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</body>
+
+</html>
